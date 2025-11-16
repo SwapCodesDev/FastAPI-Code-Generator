@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 11% 94%;
+    --foreground: 222 22% 12%;
+    --card: 210 11% 100%;
+    --card-foreground: 222 22% 12%;
+    --popover: 210 11% 100%;
+    --popover-foreground: 222 22% 12%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 9% 96%;
+    --secondary-foreground: 222 22% 12%;
+    --muted: 210 9% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 9% 96%;
+    --accent-foreground: 222 22% 12%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 20% 91%;
+    --input: 214 20% 91%;
+    --ring: 217 91% 60%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 22% 12%; /* VS Code Editor Background */
+    --foreground: 210 40% 98%; /* VS Code Editor Text */
+    --card: 224 24% 16%; /* VS Code Side Bar, Header */
+    --card-foreground: 210 40% 98%;
+    --popover: 224 24% 16%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%; /* VS Code Blue Accent */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 224 20% 24%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 224 20% 24%;
+    --muted-foreground: 215 16% 57%;
+    --accent: 224 20% 24%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 216 16% 22%; /* VS Code Editor borders */
+    --input: 216 16% 22%;
+    --ring: 217 91% 60%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
